@@ -40,7 +40,7 @@ bool function ForceGift(entity player, array<string> args)
 	string weaponId = ("");
 	array<entity> players = GetPlayerArray();
 	hadGift_Admin = false;
-	CheckAdmin(player);
+	CheckForAdmin(player);
 	if (hadGift_Admin != true)
 	{
 		Kprint( player, "Admin permission not detected.");
@@ -174,7 +174,7 @@ bool function Gift(entity player, array<string> args)
 	string weaponId = ("");
 	array<entity> players = GetPlayerArray();
 	hadGift_Admin = false;
-	CheckAdmin(player);
+	CheckForAdmin(player);
 	if (hadGift_Admin != true)
 	{
 		Kprint( player, "Admin permission not detected.");

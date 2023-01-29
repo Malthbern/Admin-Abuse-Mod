@@ -39,7 +39,7 @@ bool function GiveWM(entity player, array<string> args)
 		return true;
 
 	hadGift_Admin = false;
-	CheckAdmin(player);
+	CheckForAdmin(player);
 	if (hadGift_Admin != true && bypassPerms != true)
 	{
 		Kprint( player, "Admin permission not detected.");

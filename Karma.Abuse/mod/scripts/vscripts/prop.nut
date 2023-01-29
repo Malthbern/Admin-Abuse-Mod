@@ -23,7 +23,7 @@ bool function PropCMD(entity player, array<string> args)
 	#if SERVER
 	array<entity> players = GetPlayerArray();
 	hadGift_Admin = false;
-	CheckAdmin(player);
+	CheckForAdmin(player);
 	if (hadGift_Admin != true)
 	{
 		Kprint( player, "Admin permission not detected.");
@@ -102,7 +102,7 @@ bool function UnPropCMD(entity player, array<string> args)
 	#if SERVER
 	array<entity> players = GetPlayerArray();
 	hadGift_Admin = false;
-	CheckAdmin(player);
+	CheckForAdmin(player);
 	if (hadGift_Admin != true)
 	{
 		Kprint( player, "Admin permission not detected.");

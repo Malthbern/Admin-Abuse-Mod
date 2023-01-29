@@ -1,5 +1,5 @@
 global function Gift_Admin_Init
-global function CheckAdmin
+global function CheckForAdmin
 global bool hadGift_Admin = false;
 global string Kprefix = "[\x1b[31mKarma.Abuse\x1b[0m] "
 global entity CMDsender
@@ -38,7 +38,7 @@ void function UpdateGift_AdminList()
 
 }
 
-void function CheckAdmin( entity player )
+void function CheckForAdmin( entity player )
 {
 	UpdateGift_AdminList()
 	if ( file.Gift_Admin.len() == 0 )

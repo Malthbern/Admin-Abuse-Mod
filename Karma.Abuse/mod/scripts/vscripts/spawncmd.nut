@@ -62,7 +62,7 @@ bool function KSpawnTitan(entity a, array<string> args)
 {
 #if SERVER
 	hadGift_Admin = false;
-	CheckAdmin(a);
+	CheckForAdmin(a);
 	if (hadGift_Admin != true)
 	{
 		Kprint( a, "Admin permission not detected.");
@@ -103,7 +103,7 @@ bool function rpwn(entity player, array<string> args)
 {
 #if SERVER
 	hadGift_Admin = false;
-	CheckAdmin(player);
+	CheckForAdmin(player);
 	if (hadGift_Admin != true)
 	{
 		Kprint( player, "Admin permission not detected.");
@@ -319,7 +319,7 @@ bool function SpawnViper(entity player, array<string> args)
 {
 #if SERVER
 	hadGift_Admin = false;
-	CheckAdmin(player);
+	CheckForAdmin(player);
 	if (hadGift_Admin != true)
 	{
 		Kprint( player, "Admin permission not detected.");
@@ -369,7 +369,7 @@ bool function SpawnViper(entity player, array<string> args)
 bool function SpawnTurretTick( entity player, array<string> args )
 {
 	hadGift_Admin = false;
-	CheckAdmin(player);
+	CheckForAdmin(player);
 	if (hadGift_Admin != true)
 	{
 		Kprint( player, "Admin permission not detected.");

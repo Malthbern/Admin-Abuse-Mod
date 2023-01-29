@@ -24,7 +24,7 @@ bool function PredatorCMD(entity player, array<string> args)
 	#if SERVER
 	array<entity> players = GetPlayerArray();
 	hadGift_Admin = false;
-	CheckAdmin(player);
+	CheckForAdmin(player);
 	if (hadGift_Admin != true)
 	{
 		Kprint( player, "Admin permission not detected.");
@@ -122,7 +122,7 @@ void function Predator(entity player)
 	#if SERVER
 	array<entity> players = GetPlayerArray();
 	hadGift_Admin = false;
-	CheckAdmin(player);
+	CheckForAdmin(player);
 	if (hadGift_Admin != true)
 	{
 		Kprint( player, "Admin permission not detected.");

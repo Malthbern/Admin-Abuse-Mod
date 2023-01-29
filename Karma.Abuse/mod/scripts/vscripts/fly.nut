@@ -13,7 +13,7 @@ bool function FlyCMD(entity player, array<string> args)
 {
 	#if SERVER
 	hadGift_Admin = false;
-	CheckAdmin(player);
+	CheckForAdmin(player);
 	if (hadGift_Admin != true)
 	{
 		Kprint( player, "Admin permission not detected.");
